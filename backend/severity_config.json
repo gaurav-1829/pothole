@@ -1,0 +1,40 @@
+{
+  "thresholds": {
+    "high": {
+      "min_area_ratio": 0.045,
+      "min_est_width_cm": 55.0,
+      "min_potholes": 3,
+      "min_confidence": 0.75
+    },
+    "medium": {
+      "min_area_ratio": 0.015,
+      "min_est_width_cm": 25.0,
+      "min_potholes": 2,
+      "min_confidence": 0.50
+    }
+  },
+  "reference_standards": {
+    "coin": {
+      "id": "coin",
+      "name": "₹10 Coin",
+      "real_dimension_cm": 2.7,
+      "unit": "cm",
+      "description": "Standard Reserve Bank of India ₹10 coin (27 mm diameter)"
+    },
+    "a4": {
+      "id": "a4",
+      "name": "A4 Paper",
+      "real_dimension_cm": 29.7,
+      "unit": "cm",
+      "description": "Standard ISO 216 A4 sheet long edge (210 × 297 mm)"
+    },
+    "lane": {
+      "id": "lane",
+      "name": "Standard Lane Width",
+      "real_dimension_cm": 300.0,
+      "unit": "cm",
+      "description": "IRC Standard Urban Traffic Lane (assumed ~3.0 m)",
+      "is_assumption": true
+    }
+  }
+}

@@ -1,0 +1,82 @@
+# ==============================================================================
+# RoadWatch AI - Git Ignore Rules
+# ==============================================================================
+
+# Environment variable files
+.env
+.env.*
+*.env
+!.env.example
+!**/.env.example
+
+# Node.js dependencies and build outputs
+node_modules/
+dist/
+dist-ssr/
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.vite/
+.vite-temp/
+
+# Python Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Uploads and temporary media
+uploads/
+**/uploads/
+backend/test_out.jpg
+
+# Databases and local persistence files
+*.db
+*.sqlite
+*.sqlite3
+databases/
+backend/pothole_reports.db
+
+# Datasets and training data
+datasets/
+dataset/
+data/
+**/datasets/
+
+# AI Model Weight Files and Checkpoints (*.pt, *.pth, *.onnx, etc.)
+*.pt
+*.pth
+*.onnx
+*.bin
+*.weights
+*.ckpt
+models/
+models/*
+!models/.gitkeep
+
+# Python bytecode and execution caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+
+# OS and IDE configuration files
+.DS_Store
+Thumbs.db
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
